@@ -10,6 +10,9 @@
     <!-- css -->
     <link rel="stylesheet" href="../../assets/styles/pages.css">
 
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
     <title>Spider-man 2 | Tobey Maguire</title>
   </head>
   <body>
@@ -43,7 +46,7 @@
         <div class="main-content__intro">
           <div class="logo">
             <a href="/">
-              <img src="../../assets/images/siperman-tobey/movie-02/logo.png" alt="Spider-man 2 (2004)" title="Spider-man 2 (2004)">
+              <img src="../../assets/images/spiderman-tobey/movie-02/logo.png" alt="Spider-man 2 (2004)" title="Spider-man 2 (2004)">
             </a>
           </div>
           <div class="description">
@@ -76,23 +79,23 @@
           <div class="gallery">
             <ul class="gallery__list">
               <li class="gallery__item">
-                <a href="../../assets/images/siperman-tobey/movie-02/gallery/image-01.jpg" class="gallery__link">
-                  <img src="../../assets/images/siperman-tobey/movie-02/gallery/image-01.jpg">
+                <a href="../../assets/images/spiderman-tobey/movie-02/gallery/image-01.jpg" class="gallery__link" data-fancybox="gallery">
+                  <img src="../../assets/images/spiderman-tobey/movie-02/gallery/image-01.jpg">
                 </a>
               </li>
               <li class="gallery__item">
-                <a href="../../assets/images/siperman-tobey/movie-02/gallery/image-02.jpg" class="gallery__link">
-                  <img src="../../assets/images/siperman-tobey/movie-02/gallery/image-02.jpg">
+                <a href="../../assets/images/spiderman-tobey/movie-02/gallery/image-02.jpg" class="gallery__link" data-fancybox="gallery">
+                  <img src="../../assets/images/spiderman-tobey/movie-02/gallery/image-02.jpg">
                 </a>
               </li>
               <li class="gallery__item">
-                <a href="../../assets/images/siperman-tobey/movie-02/gallery/image-03.jpg" class="gallery__link">
-                  <img src="../../assets/images/siperman-tobey/movie-02/gallery/image-03.jpg">
+                <a href="../../assets/images/spiderman-tobey/movie-02/gallery/image-03.jpg" class="gallery__link" data-fancybox="gallery">
+                  <img src="../../assets/images/spiderman-tobey/movie-02/gallery/image-03.jpg">
                 </a>
               </li>
               <li class="gallery__item">
-                <a href="../../assets/images/siperman-tobey/movie-02/gallery/image-04.jpg" class="gallery__link">
-                  <img src="../../assets/images/siperman-tobey/movie-02/gallery/image-04.jpg">
+                <a href="../../assets/images/spiderman-tobey/movie-02/gallery/image-04.jpg" class="gallery__link" data-fancybox="gallery">
+                  <img src="../../assets/images/spiderman-tobey/movie-02/gallery/image-04.jpg">
                 </a>
               </li>
             </ul>
@@ -100,5 +103,11 @@
         </div>
       </main>
     </div>
+
+    <!-- fancybox js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]");
+    </script>
   </body>
 </html>

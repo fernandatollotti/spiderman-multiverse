@@ -10,6 +10,9 @@
     <!-- css -->
     <link rel="stylesheet" href="../../assets/styles/pages.css">
 
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
     <title>The Amazing Spider-Man | Andrew Garfield</title>
   </head>
   <body>
@@ -73,22 +76,22 @@
           <div class="gallery">
             <ul class="gallery__list">
               <li class="gallery__item">
-                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-01.jpg" class="gallery__link">
+                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-01.jpg" class="gallery__link" data-fancybox="gallery">
                   <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-01.jpg">
                 </a>
               </li>
               <li class="gallery__item">
-                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-02.jpg" class="gallery__link">
+                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-02.jpg" class="gallery__link" data-fancybox="gallery">
                   <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-02.jpg">
                 </a>
               </li>
               <li class="gallery__item">
-                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-03.jpg" class="gallery__link">
+                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-03.jpg" class="gallery__link" data-fancybox="gallery">
                   <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-03.jpg">
                 </a>
               </li>
               <li class="gallery__item">
-                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-04.jpg" class="gallery__link">
+                <a href="../../assets/images/spiderman-andrew/movie-01/gallery/image-04.jpg" class="gallery__link" data-fancybox="gallery">
                   <img src="../../assets/images/spiderman-andrew/movie-01/gallery/image-04.jpg">
                 </a>
               </li>
@@ -97,5 +100,11 @@
         </div>
       </main>
     </div>
+
+    <!-- fancybox js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]");
+    </script>
   </body>
 </html>
