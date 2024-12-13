@@ -18,4 +18,19 @@ function addEventListernersToCards() {
   }
 }
 
+function changeSlide(element) {
+  const selectedElement = element.id;
+  const carousel = document.querySelector('.carousel-slider__wrapper');
+  const transform = carousel.style.transform;
+  const rotateY = transform.match(/rotateY\((-?\d+deg)\)/i);
+  const rotateYDeg = -120 * (Number(selectedElement) -1);
+  const newTransform = transform.replace(rotateY[0], `rotateY(${rotateYDeg}deg)`);
+
+  carousel.style.transform = newTransform;
+
+  const activeButton = document.querySelector('.controller__button--active');
+  activeButton.classList.remove('controller__button--active');
+  element.classList.add('controller__button--active');
+}
+
 document.addEventListener('DOMContentLoaded', addEventListernersToCards, false);
