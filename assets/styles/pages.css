@@ -51,7 +51,10 @@ body {color: var(--secondary-color);}
   justify-content: flex-start;
 }
 
-.main-content__intro .logo img {margin: 3.125rem 0 1.875rem;}
+.main-content__intro .logo img {
+  width: 80%;
+  margin: 3.125rem 0 1.875rem;
+}
 
 .main-content__intro .description {
   max-width: 70%;
