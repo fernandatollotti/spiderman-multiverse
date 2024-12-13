@@ -1,0 +1,11 @@
+.pills__list {
+  display: flex; 
+  gap: 0.75rem;
+}
+
+.pills__list .pills__item {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  background-color: var(--primary-color);
+}

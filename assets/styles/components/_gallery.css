@@ -1,0 +1,15 @@
+.gallery {padding: 1.5rem 1.5rem 1.5rem 0;}
+
+.gallery__list {display: flex;}
+
+.gallery__list .gallery__item {margin-left: 1.5rem;}
+
+.gallery__list .gallery__item:first-child {margin-left: 0;}
+
+.gallery__list .gallery__link {width: 300px;}
+
+.gallery__list .gallery__item img {
+  width: 100%;
+  border: 6px solid var(--secondary-color);
+  border-radius: 0.5rem;
+}

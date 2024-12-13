@@ -1,0 +1,76 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('components/_navigator.css');
+@import url('components/_pills.css');
+@import url('components/_link-button.css');
+@import url('components/_gallery.css');
+
+/* ====== base styles ======= */
+body {color: var(--secondary-color);}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 100vh;
+}
+
+.wrapper video {
+  width: 100%;
+  position: fixed;
+}
+
+/* ====== left sidebar ======= */
+.left-sidebar {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ====== main content ====== */
+.main-content {
+  width: 100%;
+  height: 100%;
+  padding-left: 8.75rem;
+  position: relative;
+}
+
+.main-content__intro,
+.main-content__gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content__intro {
+  height: 80%;
+  justify-content: flex-start;
+}
+
+.main-content__intro .logo img {margin: 3.125rem 0 1.875rem;}
+
+.main-content__intro .description {
+  max-width: 70%;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-content__intro .description .description__synopsis {
+  margin-top: 1.5rem;
+  line-height: 2rem;
+}
+
+.main-content__gallery {
+  height: 20%;
+  justify-content: flex-end;
+}
+
+/* ====== section trailer ====== */
+.trailer-links {margin-top: 1.5rem;}
+
+.trailer-links__list {display: flex;}
